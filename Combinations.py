@@ -10,7 +10,6 @@ class Solution(object):
         ret=[[]]
         for i in range(k):
             ret=[[j]+c for c in ret for j in range(1,c[0] if c else n+1)]
-
         return ret
 t=Solution()
 print(t.combine(4,2))
